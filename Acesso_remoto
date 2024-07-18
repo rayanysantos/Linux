@@ -1,0 +1,24 @@
+# Problema de key ao tentar acessar remoto pelo cmder
+
+ssh <usuario>@<ip>
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ECDSA key sent by the remote host is
+KEY.
+Please contact your system administrator.
+Add correct host key in C:\\Users\\<usuario>/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in C:\\Users\\<usuario>/.ssh/know/wn_hosts:2
+ECDSA host key for <IP> has changed and you have requested strict checking.
+Host key verification failed.
+
+# Solucao
+#https://stackoverflow.com/questions/20840012/ssh-remote-host-identification-has-changed
+# Rodar no cmder
+ssh-keygen -R <IP>
+
+#-R hostname Removes all keys belonging to hostname from a known_hosts file. This option is useful to delete hashed hosts (see the -H option above).
+#Antes de rodar, tinha só um aquivo desses na pasta do Windows, depois que rodei, apareceu esse old
