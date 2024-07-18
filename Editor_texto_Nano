@@ -1,0 +1,25 @@
+# https://www.hostinger.com.br/tutoriais/como-instalar-editor-de-texto-nano/
+nano /pasta/para/diretório/demo.txt
+sudo nano -w /etc/apache2/apache2.conf
+#-w. Ela vai abrir o arquivo num formato padrão. Se você não usar essa opção, o Nano vai definir a quebra de texto para preencher a tela por padrão.
+
+Commandos	Funções
+CTRL + A	Ir para o início da linha.
+CTRL + E	Ir para o fim da linha.
+CTRL + Y	Rolar a página para baixo.
+CTRL + V	Rolar a página para cima.
+CTRL + G	Este comando exibirá uma janela de Ajuda com todos os comandos disponíveis
+CTRL + O	Salva o arquivo. O Nano vai perguntar se você quer editar ou verificar o nome de arquivo desejado.
+CTRL + W	Um dos comandos mais úteis. É usado para pesquisar uma frase especificada no seu texto. Ele funciona muito como o costume CTRL + F comando em outros aplicativos e plataformas. 
+Para procurar a mesma frase novamente pressione ALT + W.
+CTRL + K	Corta toda a linha selecionada para o “buffer de corte”.
+CTRL + U	Cola o texto do “buffer de corte” na linha selecionada.
+CTRL + J	Justifica o parágrafo atual.
+CTRL + C	Mostra a posição atual do cursor no texto (linha/coluna/caractere).
+CTRL + X	Sai do editor de texto Nano. Caso você tenha feito alguma alteração no arquivo, ele também solicitará um salvamento adicional.
+CTRL + R	Abra um arquivo com o comando “Ler arquivo”. Insere o arquivo do disco na posição atual do cursor.
+CTRL + \	Substituir uma string ou uma expressão regular.
+CTRL + T	Aciona o verificador ortográfico, se disponível.
+CTRL + _	Vá para o número de linha e coluna especificado.
+ALT + A	Selecionar texto. Primeiro, mova o cursor para o início de uma parte específica do texto que você deseja selecionar e, em seguida, pressione ALT + A. 
+Agora mova o cursor com as setas para a direita, isso vai começar a marcar/selecionar texto. Você pode combinar este comando com CTRL + K para cortar uma parte específica do texto para o “buffer de corte”.
