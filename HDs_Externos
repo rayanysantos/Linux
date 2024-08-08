@@ -1,0 +1,14 @@
+# Montar volume automaticamente ao iniciar
+# Montar o dispositivo
+sudo blkid
+# Anotar o UUID
+sudo nano /etc/fstab
+
+# Adicionar uma nova linha para o dispositivo
+UUID=1234-5678 /caminho/volume ext4 defaults 0 2
+0 indica se o sistema de arquivos deve ser "dumpado". 0 significa que nao deve ser feito dump, ou seja, copiado.
+2 Indica a ordem de verificacao do sistema de arquivos durante a inicializacao. O root filesystem deve ser 1 e outros sistemas de arquivos geralmente sao 2.
+
+# Montar todos os sistemas de arquivos definidos em /etc/fstab
+sudo mount -a
+df -h
